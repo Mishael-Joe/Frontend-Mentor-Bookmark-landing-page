@@ -12,7 +12,7 @@ const MobileNav: React.FC = () => {
   };
 
   return (
-    <nav className="w-full md:max-w-6xl mx-auto py-4 px-6 z-40 flex justify-between sm:items-center">
+    <nav className="w-full md:max-w-6xl mx-auto py-4 px-6 z-40 flex justify-between sm:items-center relative">
       {!showMenu && (
         <Link href={`/`}>
           <Image src={`/logo-bookmark.svg`} width={170} height={32} alt="" />
@@ -51,8 +51,8 @@ const MobileNav: React.FC = () => {
       )}
 
       {showMenu && (
-        <div className="absolute inset-0 bg-Very-Dark-Blue/90 text-white flex flex-col gap-16 items-center">
-          <div className="p-6 w-full">
+        <div className="absolute inset-0 b-Very-Dark-Blue/90 text-white flex flex-col gap-16 items-center">
+          <div className="p-6 w-full bg-Very-Dark-Blue/90 min-h-screen">
             <div className="flex flex-row justify-between items-center logo">
               <svg
                 width="148"

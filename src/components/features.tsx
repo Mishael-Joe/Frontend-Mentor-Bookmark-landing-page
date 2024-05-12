@@ -5,7 +5,7 @@ import React, { Fragment, useState } from "react";
 
 const SimpleBookmarking: React.FC = () => (
   <div className=" text-center md:text-left pt-20 md:pt-10 flex flex-col items-center gap-4 md:gap-10 md:justify-between md:flex-row">
-    <div className="flex justify-center md:w-1/2">
+    <div className="flex justify-center md:w-1/2 relative">
       <Image
         src={`/illustration-features-tab-1.svg`}
         className="22screen:w-[80%] md:w-[95%]"
@@ -13,6 +13,8 @@ const SimpleBookmarking: React.FC = () => (
         height={200}
         alt="illustration-hero"
       />
+
+      <div className="h-[100%] -left-20 sm:-left-40 w-full lg:-left-60 -bottom-16 bg-Soft-Blue rounded-br-[8rem] -z-10 absolute" />
     </div>
 
     <div className="pt-20 md:pt-0 md:w-[40%]">
@@ -33,7 +35,7 @@ const SimpleBookmarking: React.FC = () => (
 
 const SpeedySearching: React.FC = () => (
   <div className=" text-center md:text-left pt-20 md:pt-10 flex flex-col items-center gap-4 md:gap-10 md:justify-between md:flex-row">
-    <div className="flex justify-center md:w-1/2">
+    <div className="flex justify-center md:w-1/2 relative">
       <Image
         src={`/illustration-features-tab-2.svg`}
         className="22screen:w-[80%] md:w-[95%]"
@@ -41,6 +43,8 @@ const SpeedySearching: React.FC = () => (
         height={200}
         alt="illustration-hero"
       />
+
+      <div className="h-[90%] -left-20 sm:-left-40 w-full lg:-left-60 lg:w-[120%] -bottom-16 bg-Soft-Blue rounded-br-[8rem] -z-10 absolute" />
     </div>
 
     <div className="pt-20 md:pt-0 md:w-[40%]">
@@ -60,7 +64,7 @@ const SpeedySearching: React.FC = () => (
 
 const EasySharing: React.FC = () => (
   <div className=" text-center md:text-left pt-20 md:pt-10 flex flex-col items-center gap-4 md:gap-10 md:justify-between md:flex-row">
-    <div className="flex justify-center md:w-1/2">
+    <div className="flex justify-center md:w-1/2 relative">
       <Image
         src={`/illustration-features-tab-3.svg`}
         className="22screen:w-[80%] md:w-[95%]"
@@ -68,6 +72,8 @@ const EasySharing: React.FC = () => (
         height={200}
         alt="illustration-hero"
       />
+
+      <div className="h-[90%] -left-20 sm:-left-40 w-full lg:-left-60 lg:w-[120%] -bottom-16 bg-Soft-Blue rounded-br-[8rem] -z-10 absolute" />
     </div>
 
     <div className="pt-20 md:pt-0 md:w-[40%]">
@@ -158,7 +164,7 @@ const FeaturesTabs: React.FC = () => {
 
 function Features() {
   return (
-    <section className="relative">
+    <section>
       <div className="max-w-5xl mx-auto px-6">
         <div className=" text-center">
           <h1 className=" text-2xl font-semibold pt-20">Features</h1>
@@ -172,8 +178,6 @@ function Features() {
 
         <FeaturesTabs />
       </div>
-
-      <div className="h-[20%] left-0 bottom-52 33screen:w-[60%] 33screen:h-[25%] 55screen: 66screen: w-[80vw] md:w-[40%] bg-Soft-Blue rounded-br-[8rem] -z-10 absolute md:-bottom-14 md:h-[50%]" />
     </section>
   );
 }

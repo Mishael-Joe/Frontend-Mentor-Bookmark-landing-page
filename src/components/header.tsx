@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Header() {
   return (
-    <header className="">
+    <header className=" overflow-hidden">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -63,19 +63,18 @@ function Header() {
               x: 100,
             },
           }}
-          className="md:w-1/2"
+          className="md:w-1/2 relative"
         >
           <Image
             src={`/illustration-hero.svg`}
-            className="w-full h-full"
+            className="w-full h-full relative -z-10"
             width={300}
             height={200}
             alt="illustration-hero"
           />
+          <div className="h-[80%] -right-6 lg:-right-60 w-[80%] lg:w-[120%] bottom-0 bg-Soft-Blue rounded-bl-[8rem] -z-20 absolute" />
         </motion.div>
       </motion.div>
-
-      <div className="h-[35%] top-28 11screen:top-32 22screen:h-[40%] 44screen:h-[50%] 55screen:h-[55%] 66screen:h-[65%] w-[80vw] md:h-[40%] md:w-[40%] right-0 bg-Soft-Blue rounded-bl-[8rem] -z-10 absolute lg:h-[55%] lg:top-44" />
     </header>
   );
 }
