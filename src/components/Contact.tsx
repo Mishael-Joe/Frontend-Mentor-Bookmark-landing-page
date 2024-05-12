@@ -21,7 +21,7 @@ function Contact() {
       <div className=" text-white flex flex-col items-center max-w-5xl mx-auto px-6">
         <p>35,000+ already joined</p>
         <p className=" text-xl text-center pt-3 font-semibold lg:text-4xl lg:w-96">
-          Stay up-to-date with what we’re doing
+          Stay up-to-date with what we&apos;re doing
         </p>
 
         <div className="w-full flex flex-col gap-4 mt-5 sm:flex-row">
@@ -55,7 +55,7 @@ function Contact() {
 
             {errmsg && (
               <p className=" italic pl-4 text-sm font-semibold">
-                whoops, make sure it's an email
+                whoops, make sure it&apos;s an email
               </p>
             )}
           </div>
